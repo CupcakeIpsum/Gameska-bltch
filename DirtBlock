@@ -1,0 +1,65 @@
+import tkinter as tk
+canvas=tk.Canvas(width=1500, height=900)
+canvas.pack()
+
+
+a='#803300'#svetlohnedá
+b='#552200'#tmavohnedá
+c='#502D16'#tmavošedá
+d='#391D0C'#čiernohnedá
+e='#784421'#svetlošedá
+
+#súrad.:  A,B,C,D,E,F,G,H,I,J
+colors01=[b,a,a,b,a,b,a,a,a,b]#A
+colors02=[a,b,c,b,a,a,c,d,b,a]#B
+colors03=[c,d,e,a,d,d,a,a,b,b]#C
+colors04=[b,b,b,a,a,c,b,b,b,a]#D
+colors05=[a,b,d,b,b,b,c,a,c,a]#E
+colors06=[b,a,c,e,a,c,a,b,a,a]#F
+colors07=[b,d,b,a,b,b,a,e,b,b]#G
+colors08=[e,b,c,d,c,b,c,d,b,a]#H
+colors09=[a,b,b,b,a,b,b,b,a,b]#I
+colors10=[b,d,c,b,c,b,e,a,b,b]#J
+
+def r1(x,y,color):
+    canvas.create_rectangle(x,y,x+5,y+5,fill=color,outline='')
+def r2(x,y,color):
+    canvas.create_rectangle(x,y+5,x+5,y+10,fill=color,outline='')
+def r3(x,y,color):
+    canvas.create_rectangle(x,y+10,x+5,y+15,fill=color,outline='')
+def r4(x,y,color):
+    canvas.create_rectangle(x,y+15,x+5,y+20,fill=color,outline='')
+def r5(x,y,color):
+    canvas.create_rectangle(x,y+20,x+5,y+25,fill=color,outline='')
+def r6(x,y,color):
+    canvas.create_rectangle(x,y+25,x+5,y+30,fill=color,outline='')
+def r7(x,y,color):
+    canvas.create_rectangle(x,y+30,x+5,y+35,fill=color,outline='')
+def r8(x,y,color):
+    canvas.create_rectangle(x,y+35,x+5,y+40,fill=color,outline='')
+def r9(x,y,color):
+    canvas.create_rectangle(x,y+40,x+5,y+45,fill=color,outline='')
+def r10 (x,y,color):
+    canvas.create_rectangle(x,y+45,x+5,y+50,fill=color,outline='')
+    
+    
+def block(x,y):
+    for i in range(10):
+        r1(x+i*5,y,colors01[i])
+        r2(x+i*5,y,colors02[i])
+        r3(x+i*5,y,colors03[i])
+        r4(x+i*5,y,colors04[i])
+        r5(x+i*5,y,colors05[i])
+        r6(x+i*5,y,colors06[i])
+        r7(x+i*5,y,colors07[i])
+        r8(x+i*5,y,colors08[i])
+        r9(x+i*5,y,colors09[i])
+        r10(x+i*5,y,colors10[i])
+'''for i in range(30):
+    for j in range(25):
+        block(0+i*50,0+j*50)'''
+block(0, 0)
+
+
+
+ 

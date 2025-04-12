@@ -104,17 +104,14 @@ def block(x,y):
     #canvas.create_line(x+30,y+30,x+37,y+25,fill='dark green',width=2)
 
     
-for i in range(30):
-    for j in range(25):
-        block(0+i*60,0+j*60)
-#block(0,0)
+#for i in range(30):
+#    for j in range(25):
+#        block(0+i*60,0+j*60)
+block(0,0)
 x=0
 y=0
-canvas.create_line(x+30,y+30,x+23,y+25,fill='dark green',width=2)
-canvas.create_line(x+30,y+30,x+30,y+22,fill='dark green',width=2)
-canvas.create_line(x+30,y+30,x+37,y+25,fill='dark green',width=2)
+
 
     
 
  
-

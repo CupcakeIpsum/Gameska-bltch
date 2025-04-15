@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrázok v Canvas</title>
+</head>
+<body>
 
+  <canvas id="gameCanvas" width="1500" height="900"></canvas>
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const image = new Image();
+    image.src = 'output_image.png';  // Cesta k obrázku
+
+    image.onload = () => {
+      ctx.drawImage(image, 0, 0);  // Načíta a vykreslí obrázok na canvas
+    };
+  </script>
+
+</body>
+</html>

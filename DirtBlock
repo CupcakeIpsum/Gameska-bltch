@@ -103,5 +103,5 @@ def block(x,y):
 #    for j in range(25):
  #       block(0+i*65,0+j*65)
 block(0,0)
-
+17 riadok
  
